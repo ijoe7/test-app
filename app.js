@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
-const bodyParser = require("body-parser");
-const AppError = require("./config/appError");
-const errorHandler = require("./config/errorController");
 const cors = require("cors");
+const bodyParser = require("body-parser");
+const errorHandler = require("./config/errorController");
+const AppError = require("./config/appError");
 const userRouter = require("./routes/userRoutes");
 
 app.use(cors());
